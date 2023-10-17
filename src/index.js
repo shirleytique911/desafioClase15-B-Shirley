@@ -20,7 +20,7 @@ const httServer = app.listen(PORT, () => {
     console.log(`Servidor Express Puerto ${PORT}`)
 })
 
-mongoose.connect("mongodb+srv://shirleytique911:<password>@cluster0.27oomzj.mongodb.net/?retryWrites=true&w=majority")
+mongoose.connect("mongodb+srv://lorenatique911:0ezQQ8MkPWgiA3IB@cluster0.88znedb.mongodb.net/?retryWrites=true&w=majority")
 .then (()=>{
     console.log("Conectado")
 })
@@ -37,7 +37,7 @@ app.use("/api/prod", productsRouter)
 // Prueba Multer 
 app.use("/", uploadRouter)
 
-//handelbars
+// handelbars
 app.engine("handlebars", engine());
 app.set("view engine", "handlebars");
 app.set("views", path.resolve(__dirname + "/views"))
